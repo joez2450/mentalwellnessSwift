@@ -9,12 +9,17 @@ import SwiftUI
 
 struct Resources: View {
     var body: some View {
-        VStack {
-            Text("Resources Screen")
-                .font(.title)
-                .bold()
+        NavigationStack{
+            VStack {
+                Text("Resources Screen\n To be continued...")
+                    .font(.title)
+                    .bold()
+            }
+            .padding()
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+            NavigationLink("Back to Main Menu", destination: ContentView())
+                .buttonStyle(.bordered)
         }
-        .padding()
     }
 }
 

@@ -59,7 +59,13 @@ struct GameSceneTwo: View {
                             .font(.headline)
                         
                     }
-                    .padding(.top, 200)
+                    .padding(.top, 150)
+                }
+                
+                NavigationStack{
+                    NavigationLink("Return to Main Menu", destination: ContentView())
+                        .padding(.top, 250)
+                        .buttonStyle(.borderedProminent)
                 }
             }
         }
