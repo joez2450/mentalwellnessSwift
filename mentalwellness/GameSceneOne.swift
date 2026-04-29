@@ -10,7 +10,6 @@ import SwiftUI
 struct GameSceneOne: View {
     @State private var gameState = false;
     @State private var startTime = Date();
-    @State private var reactionTime: Double = 0.0;
     @State private var backgroundColor = Color.blue;
     @State private var message: String = "Click to start!";
     @State private var isActive = false;
