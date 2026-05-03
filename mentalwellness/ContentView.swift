@@ -25,9 +25,6 @@ struct ContentView: View {
                         }
                         .scrollContentBackground(.hidden)
                     }
-                    Tab("Resources", systemImage: "star.fill"){
-                        Text("hi")
-                    }
                     Tab("Settings", systemImage: "gearshape.fill"){
                         VStack {
                             Toggle("Dark Mode", isOn: $isDark)
