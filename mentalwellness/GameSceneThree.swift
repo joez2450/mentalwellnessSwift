@@ -41,7 +41,7 @@ struct GameSceneThree: View {
                     LazyVGrid(columns: firstColumnGrid, spacing: 10){
                         ForEach(cards){card in
                             CardView(card: card,
-                                     width:Int(geo.size.height/6),
+                                     width:Int(geo.size.width/4.5),
                                      MatchedCards: $MatchedCards,
                                      UserChoices: $UserChoices)}
                     }

@@ -25,14 +25,25 @@ struct ContentView: View {
                         }
                         .scrollContentBackground(.hidden)
                     }
-                    Tab("Settings", systemImage: "gearshape.fill"){
+                    Tab("Resources", systemImage: "star.fill"){
+                        DisclosureGroup("What is the mission of the game?") {
+                                   Text("This game aims to stimulate well-being and the start of healthier habits. Rather than having online competition, we made it solitary, and the only goal is to improve yourself. Having no distracting noises or elements, our goal was to provide a space where positive resources and small games can intersect.")
+                               }
+                               .padding()
+                        DisclosureGroup("How can I start to use less social media?") {
+                                   Text("Start by being more mindful and set a goal of what you want to achieve when you get online. Rather than constantly scrolling, do what you have to do and get back offline. Additionally, to supplement this process, you can turn off notifications and set a goal of a certain period of time to get off social media (1 day, 3 days, 1 week, etc).")
+                               }
+                               .padding()
+                        DisclosureGroup("How can I get involved to become more mindful?") {
+                                   Text("Check out communities like Internet and Technology Addicts Anonymous (ITAA) and Media Addicts Anonymous (MAA) as they provide meetings and tools for reducing social media usage. Tools such as Screen Time (IOS) or Digital Wellbeing (Android) monitor screen time and are a great resource in seeing where to start.")
+                               }
+                               .padding()
                         VStack {
                             Toggle("Dark Mode", isOn: $isDark)
                                 .padding(20)
                         }
                         .preferredColorScheme(isDark ? .dark : .light)
                     }
-                    
                 }
         }
         
