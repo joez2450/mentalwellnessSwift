@@ -29,7 +29,7 @@ struct GameCard<TargetView: View>: View {
                 }
             }
             .padding()
-            .background(Color.white)
+            .background(Color.white.opacity(0.8))
             .shadow(radius: 5)
         }
         .frame(maxWidth: 300)
