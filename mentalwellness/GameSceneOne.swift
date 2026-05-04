@@ -47,6 +47,7 @@ struct GameSceneOne: View {
         } else { GameStart();
         }
     }
+    
     func GameStart() {
         isActive = true;
         gameState = true;

@@ -2,6 +2,7 @@ import SwiftUI
 
 struct GameCard<TargetView: View>: View {
     let title: String
+    let description: String
     let iconName: String
     let destination: TargetView
     var body: some View {
@@ -18,6 +19,8 @@ struct GameCard<TargetView: View>: View {
             VStack(spacing: 12) {
                 Text(title)
                     .font(.headline)
+                Text(description)
+                    .font(.caption)
                 NavigationLink(destination: destination) {
                     Text("PLAY")
                     .fontWeight(.bold)

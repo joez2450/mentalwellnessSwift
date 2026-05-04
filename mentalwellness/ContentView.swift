@@ -16,9 +16,9 @@ struct ContentView: View {
                         Text("Home")
                         ScrollView{
                             LazyVStack(spacing: 12){
-                                GameCard(title: "Reaction Time Test", iconName: "brain", destination: GameSceneOne())
-                                GameCard(title: "Memory Test Game", iconName: "timer", destination: GameSceneThree())
-                                GameCard(title: "Brain Coordination", iconName: "scope", destination: GameSceneTwo())
+                                GameCard(title: "Reaction Time Test", description: "Quiet your thoughts to sharpen your senses. A calm mind is the fastest to move.", iconName: "brain", destination: GameSceneOne())
+                                GameCard(title: "Memory Test Game", description: "Flip, focus, and find the pair. Strengthening your memory starts with being fully present.", iconName: "timer", destination: GameSceneThree())
+                                GameCard(title: "Brain Coordination", description: "Clear your sight and calm your pulse. Accuracy flows from a centered mind.", iconName: "scope", destination: GameSceneTwo())
                             }
                             .background(LinearGradient(colors: [.blue, .green], startPoint: .top, endPoint: .bottom))
                             .ignoresSafeArea()
